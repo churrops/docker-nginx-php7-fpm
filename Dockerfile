@@ -10,10 +10,10 @@ RUN apt-get update -y && add-apt-repository ppa:nginx/stable \
     php7.0-xmlrpc php7.0-imap php7.0-mbstring php7.0-zip \
     wget apt-utils php-redis -y && \
     && rm -rf /var/lib/apt/lists/* && \
-    echo 'export LANG=C' >> /etc/profile && \
-    rm /etc/localtime \
-    && ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime && \
-    mkdir /run/php && \
+    && echo 'export LANG=C' >> /etc/profile \
+    && rm /etc/localtime \
+    && ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime \
+    && mkdir /run/php
 
 WORKDIR /
 
