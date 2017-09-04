@@ -8,8 +8,8 @@ RUN apt-get update -y && add-apt-repository ppa:nginx/stable \
     && apt-get install php7.0-fpm php7.0-cli php7.0-gd \
     php7.0-dev php7.0-json php7.0-mysql php7.0-xml \
     php7.0-xmlrpc php7.0-imap php7.0-mbstring php7.0-zip \
-    wget apt-utils php-redis -y && \
-    && rm -rf /var/lib/apt/lists/* && \
+    wget apt-utils php-redis -y \
+    && rm -rf /var/lib/apt/lists/* \
     && echo 'export LANG=C' >> /etc/profile \
     && rm /etc/localtime \
     && ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime \
