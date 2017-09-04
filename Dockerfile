@@ -2,8 +2,8 @@ FROM ubuntu:16.04
 
 LABEL maintainer="florianocomercial@gmail.com"
 
-RUN apt-get update && apt-get install apt-utils -y && add-apt-repository ppa:nginx/stable \
-    && apt-get install python-software-properties software-properties-common -y \
+RUN apt-get update && apt-get install python-software-properties software-properties-common -y \
+    && apt-get install apt-utils -y && add-apt-repository ppa:nginx/stable \
     && apt-get update -y && apt-get install nginx -y \
     && apt-get install apt-utils php7.0-fpm php7.0-cli php7.0-gd \
     php7.0-dev php7.0-json php7.0-mysql php7.0-xml \
