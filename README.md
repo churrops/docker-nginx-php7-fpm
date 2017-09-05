@@ -1,1 +1,4 @@
-# docker-nginx-php7
+# Docker Nginx PHP7-FPM
+
+https://github.com/vandocouto/Docker-Wordpress.git
+
