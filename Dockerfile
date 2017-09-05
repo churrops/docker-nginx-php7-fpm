@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install python-software-properties software-proper
 
 WORKDIR /
 
-COPY scripts/start.sh 	/
+COPY start.sh 	/
 
 # start
 ENTRYPOINT ["/start.sh"]
