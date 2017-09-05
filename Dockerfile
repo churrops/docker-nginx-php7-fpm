@@ -17,8 +17,10 @@ RUN apt-get update && apt-get install python-software-properties software-proper
 
 WORKDIR /
 
+COPY scripts/start.sh 	/
+
 # start
-ENTRYPOINT php-fpm7.0 && nginx -g 'daemon off'
+ENTRYPOINT ["/start.sh"]
 
 # Ports
 EXPOSE 80
