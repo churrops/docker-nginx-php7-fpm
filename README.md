@@ -1,11 +1,10 @@
-# Docker Nginx PHP7 + FPM
+## Docker Nginx PHP7 + FPM on "ubuntu:16.04"
 
 This container includes the basic installation of Nginx with PHP7 + FPM
 
 It can be used as the basis for an installation of a Wordpress, Kanboard, GLPI, or other software that uses Nginx and PHP.
 
-Executando o container
-
+# Usage
 ``` 
 ~# docker container run -d -p 80:80 churrops/nginx-php7-fpm 
 ```
@@ -20,7 +19,7 @@ FROM churrops/nginx-php7-fpm
 
 ``` 
 
-## Refência para instalação de um Wordpress!
+# Wordpress install reference!
 
 https://github.com/vandocouto/Docker-Wordpress.git
 
