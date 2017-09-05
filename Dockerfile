@@ -15,12 +15,10 @@ RUN apt-get update && apt-get install python-software-properties software-proper
     && ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime \
     && mkdir /run/php
 
-WORKDIR /
+COPY start.sh   /
 
-COPY start.sh 	/
+RUN chmod +x /start.sh
 
-# start
 ENTRYPOINT ["/start.sh"]
 
-# Ports
 EXPOSE 80
