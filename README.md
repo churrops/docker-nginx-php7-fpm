@@ -6,7 +6,9 @@ It can be used as the basis for an installation of a Wordpress, Kanboard, GLPI, 
 
 Executando o container
 
-``` ~# docker container run -d -p 80:80 churrops/nginx-php7-fpm ```
+``` 
+~# docker container run -d -p 80:80 churrops/nginx-php7-fpm 
+```
 
 To use the image as a base, simply start your Dockerfile with the following syntax
 
