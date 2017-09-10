@@ -12,9 +12,7 @@ RUN apt-get update && apt-get install python-software-properties software-proper
 	php7.0-xml php7.0-xmlrpc \
        	php7.0-imap php7.0-mbstring \
 	php7.0-zip wget php-redis -y \
-
     && rm -rf /var/lib/apt/lists/* \
-    && rm /var/www/html/index.nginx-debian.html \
     
     && echo 'export LANG=C' >> /etc/profile \
     && rm /etc/localtime \
