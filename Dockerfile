@@ -11,7 +11,9 @@ RUN apt-get update && apt-get install python-software-properties software-proper
 	php7.0-json php7.0-mysql \
 	php7.0-xml php7.0-xmlrpc \
        	php7.0-imap php7.0-mbstring \
-	php7.0-zip wget php-redis -y \
+	php7.0-zip wget php-redis \ 
+    	php7.0-ldap php-apcu-bc \
+	php7.0-curl -y \
     && rm -rf /var/lib/apt/lists/* \
     
     && echo 'export LANG=C' >> /etc/profile \
