@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install python-software-properties software-proper
 	php7.0-xml php7.0-xmlrpc \
        	php7.0-imap php7.0-mbstring \
 	php7.0-zip wget php-redis \ 
-    	php7.0-ldap php7.0-curl \
+    	php7.0-ldap php7.0-curl php-apcu \
 
     && rm -rf /var/lib/apt/lists/* \
     
